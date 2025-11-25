@@ -33,7 +33,7 @@ body{
     flex-wrap: wrap;
     border: 2px solid var(--c-dark-gray);
     border-radius: 20px;
-    box-shadow: 10px 10px rgba(17, 17, 17, 1);
+    box-shadow: 5px 5px rgba(17, 17, 17, 1);
     transition: box-shadow 0.5s ease;
 }
 .main-card:hover{
@@ -98,5 +98,6 @@ body{
     .description{font-size: 14px;}
     .title{font-size: 20px;}
     .author{width: 279px;}
+
 
 }
