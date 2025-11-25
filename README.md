@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://scp0999.github.io/BlogReviewCard/)
+- Live Site URL: [BlogReviewCard](https://scp0999.github.io/BlogReviewCard/)
 
 ## My process
 
