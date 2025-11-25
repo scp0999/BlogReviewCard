@@ -1,0 +1,102 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --c-yellow: #F4D04E;
+    --c-dark-gray: #111111;
+    --c-gray: #6B6B6B;
+    --c-white: #FFFFFF;
+    --f-s: 0.75rem;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Remove default browser margins */
+    padding: 0; /* Remove default browser padding */
+    background-color: var(--c-yellow);
+  }
+  
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Figtree", sans-serif;
+}
+.main-card{
+    width: 384px;
+    height: 522px;
+    background-color: var(--c-white);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 2px solid var(--c-dark-gray);
+    border-radius: 20px;
+    box-shadow: 10px 10px rgba(17, 17, 17, 1);
+    transition: box-shadow 0.5s ease;
+}
+.main-card:hover{
+    box-shadow: 15px 15px rgba(17, 17, 17, 1);;
+}
+.main-card:hover .title{
+    color: var(--c-yellow);
+}
+
+.blog_image{
+    height: 200px;
+    width: 336px;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.content{
+    width: 336px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: var(--f-s);
+    justify-content: space-evenly;
+    align-content: center;
+}
+.category{
+    width: fit-content;
+    padding: 5px;
+    background-color: var(--c-yellow);
+    font-weight: 700;
+    border-radius: 4px;
+}
+.description{
+    font-size: 16px;
+    color: var(--c-gray);
+}
+.title{
+    font-size: 24px;
+    font-weight: 800;
+    transition: color 0.3s ease;
+}
+
+.author{
+    width: 336px;
+    display: flex;
+    align-items: anchor-center;
+}
+.author_img{
+    height: 32px;
+    width: 32px;
+}
+.author_name{
+    font-weight: 700;
+    font-size: var(--f-s);
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .main-card{height: 501px; width: 327px;}
+    .blog_image{height: auto; width: 279px;}
+    .content{width: 279px;}
+    .description{font-size: 14px;}
+    .title{font-size: 20px;}
+    .author{width: 279px;}
+
+}
